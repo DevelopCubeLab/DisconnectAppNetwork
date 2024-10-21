@@ -1,0 +1,9 @@
+Package: com.developlab.disconnectappnetwork
+Name: DisconnectAppNetwork
+Version: 0.0.1
+Architecture: iphoneos-arm iphoneos-arm64
+Description: An awesome MobileSubstrate tweak!
+Maintainer: null
+Author: null
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)
