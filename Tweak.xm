@@ -64,3 +64,69 @@
 }
 
 %end
+
+%hook NSURLConnection
+
++ (NSURLConnection *)connectionWithRequest:(NSURLRequest *)request delegate:(id)delegate {
+    // 模拟网络不可用
+    NSLog(@"Hooked NSURLConnection");
+    return nil;
+}
+
+- (void)start {
+    NSLog(@"NSURLConnection start hooked");
+}
+
+%end
+
+%hook CFSocketStream
+
+- (void)open {
+    NSLog(@"Hooked CFSocketStream open");
+}
+
+- (void)close {
+    NSLog(@"Hooked CFSocketStream close");
+}
+
+%end
+
+%hook NSURLProtocol
+
++ (BOOL)canInitWithRequest:(NSURLRequest *)request {
+    NSLog(@"Hooked NSURLProtocol");
+    return NO; // 阻止任何网络请求 Block any network requests
+}
+
+%end
+
+%hook WKWebView
+
+- (void)loadRequest:(NSURLRequest *)request {
+    NSLog(@"WKWebView network request intercepted: %@", request.URL.absoluteString);
+}
+
+%end
+
+%hook GCDAsyncSocket
+
+- (void)connectToHost:(NSString *)host onPort:(uint16_t)port error:(NSError **)errPtr {
+    NSLog(@"GCDAsyncSocket connection blocked to host: %@", host);
+    *errPtr = [NSError errorWithDomain:@"GCDAsyncSocketErrorDomain" code:1 userInfo:nil];
+}
+
+%end
+
+%hook AFURLSessionManager
+
+- (NSURLSessionDataTask *)dataTaskWithRequest:(NSURLRequest *)request completionHandler:(void (^)(NSURLResponse *response, id responseObject, NSError *error))completionHandler {
+    NSLog(@"Blocked AFNetworking request: %@", request.URL.absoluteString);
+    NSError *error = [NSError errorWithDomain:NSURLErrorDomain code:NSURLErrorNotConnectedToInternet userInfo:nil];
+    completionHandler(nil, nil, error);
+
+    return nil; // 阻止网络请求 Block network requests
+}
+
+%end
+
+
