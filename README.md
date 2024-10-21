@@ -1,7 +1,7 @@
 # DisconnectAppNetwork
-iOS Tweaks disconnect application network.
-If you use CH/A model devices you can use iOS settings to manager application network. This tweak is for other devices.
-**⚠️Not all applications are supported.**
+iOS Tweaks disconnect application network.  
+If you use CH/A model devices you can use iOS settings to manager application network. This tweak is for other devices.  
+**⚠️Not all applications are supported.**  
 **NO ANY alert or notification, just disconnect the network.**
 
 ## Build
