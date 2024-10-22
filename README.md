@@ -28,7 +28,8 @@ Zh:
 4. 尽情享受。如果您想恢复App的网络，请将此dylib移除注入即可。
 
 ## Tested inject Application
-I test the application myself and can disconnect from the network.
+I test the application myself and can disconnect from the network.  
+
 **Support ✅**
 - [Marble Master](https://apps.apple.com/app/id1573755134) Version 10.112.182
 - [Paper Boy Race: Running game](https://apps.apple.com/app/id1487826356) Version 1.38.16
@@ -40,10 +41,11 @@ I test the application myself and can disconnect from the network.
 - qnq(`qnq.nuosike.sign`) Application crash and eject the dylib application data will be lost!⚠️
 
 Zh:
-我自己测试的应用程序，可以断开网络连接。
+我自己测试的应用程序，可以断开网络连接。  
+
 **支持 ✅**
 - [Marble Master](https://apps.apple.com/app/id1573755134) 版本 10.112.182
-- - [Paper Boy Race: Running game](https://apps.apple.com/app/id1487826356) 版本 1.38.16
+- [Paper Boy Race: Running game](https://apps.apple.com/app/id1487826356) 版本 1.38.16
 - [find differences search spot](https://apps.apple.com/app/id1579287385) 版本 3.34
 - [subway-surfers](https://apps.apple.com/app/id512939461) (TrollFools注入需要先解密IPA) 版本 3.36.2
 
