@@ -31,10 +31,12 @@ Zh:
 I test the application myself and can disconnect from the network.  
 
 **Support ✅**
+- [Shawarma Legend](https://apps.apple.com/app/id6479530421) Version 1.0.45
+- [Block Blast!](https://apps.apple.com/app/id1617391485) Version 4.7.8
 - [Marble Master](https://apps.apple.com/app/id1573755134) Version 10.112.182
 - [Paper Boy Race: Running game](https://apps.apple.com/app/id1487826356) Version 1.38.16
-- [find differences search spot](https://apps.apple.com/app/id1579287385) Version 3.34
-- [subway-surfers](https://apps.apple.com/app/id512939461) (TrollFools inject need decrypting IPA first) Version 3.36.2
+- [Find differences search spot](https://apps.apple.com/app/id1579287385) Version 3.34
+- [Subway Surfers](https://apps.apple.com/app/id512939461) (TrollFools inject need decrypting IPA first) Version 3.36.2
 
 **Not Support ❌**
 - [WeChat](https://apps.apple.com/app/id414478124) Still can connect to the network
@@ -44,10 +46,12 @@ Zh:
 我自己测试的应用程序，可以断开网络连接。  
 
 **支持 ✅**
+- [Shawarma Legend](https://apps.apple.com/app/id6479530421) 版本 1.0.45
+- [Block Blast!](https://apps.apple.com/app/id1617391485) 版本 4.7.8
 - [Marble Master](https://apps.apple.com/app/id1573755134) 版本 10.112.182
 - [Paper Boy Race: Running game](https://apps.apple.com/app/id1487826356) 版本 1.38.16
-- [find differences search spot](https://apps.apple.com/app/id1579287385) 版本 3.34
-- [subway-surfers](https://apps.apple.com/app/id512939461) (TrollFools注入需要先解密IPA) 版本 3.36.2
+- [Find differences search spot](https://apps.apple.com/app/id1579287385) 版本 3.34
+- [Subway Surfers](https://apps.apple.com/app/id512939461) (TrollFools注入需要先解密IPA) 版本 3.36.2
 
 **不支持 ❌**
 - [WeChat](https://apps.apple.com/app/id414478124) 仍然可以连接到网络
