@@ -34,6 +34,12 @@ jobs:
         chmod +x ldid
         sudo mv ldid /usr/local/bin/ldid
 
+    # Verify Theos environment
+    - name: Check Theos Setup
+      run: |
+        ls -l $HOME/theos
+        ls -l $HOME/theos/makefiles
+
     # Build the tweak
     - name: Build Tweak
       run: |
