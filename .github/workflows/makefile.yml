@@ -21,11 +21,18 @@ jobs:
     - name: Set up Theos
       run: |
         sudo apt update
-        sudo apt install -y git curl ldid dpkg
+        sudo apt install -y git curl dpkg fakeroot
         git clone --recursive https://github.com/theos/theos.git $HOME/theos
         echo 'export THEOS=$HOME/theos' >> $HOME/.bashrc
         echo 'export PATH=$THEOS/bin:$PATH' >> $HOME/.bashrc
         source $HOME/.bashrc
+
+    # Install ldid from a trusted source
+    - name: Install ldid
+      run: |
+        curl -LO https://github.com/ProcursusTeam/ldid/releases/latest/download/ldid
+        chmod +x ldid
+        sudo mv ldid /usr/local/bin/ldid
 
     # Build the tweak
     - name: Build Tweak
