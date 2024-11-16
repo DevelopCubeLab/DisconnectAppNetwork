@@ -42,6 +42,8 @@ jobs:
 
     # Build the tweak
     - name: Build Tweak
+      env:
+        THEOS: $HOME/theos
       run: |
         make clean
         make package FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
