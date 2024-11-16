@@ -45,5 +45,6 @@ jobs:
       env:
         THEOS: $HOME/theos
       run: |
-        make clean
-        make package FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
+        echo "Using THEOS: $THEOS"
+        make clean THEOS=$THEOS
+        make package FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless THEOS=$THEOS
